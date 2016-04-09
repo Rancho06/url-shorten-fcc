@@ -10,7 +10,7 @@ require("dotenv").config({
 });
 
 app.set("port", process.env.PORT);
-app.set("mongo_uri", process.env.MONGO_URI);
+app.set("mongo_uri", process.env.MONGOLAB_URI);
 
 mongoClient.connect(app.get("mongo_uri"), function(err, db) {
   if (err) {
