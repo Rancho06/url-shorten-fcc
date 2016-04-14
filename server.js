@@ -29,6 +29,6 @@ mongoClient.connect(app.get("mongo_uri"), function(err, db) {
   routes(app, db);
 
   app.listen(app.get("port"), function() {
-      console.log(`The app is running on port ${app.get("port")}`);
+      console.log(`The app is running on ${process.env.APP_URL}`);
   });
 });
