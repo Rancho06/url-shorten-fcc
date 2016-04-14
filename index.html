@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>URL Shorten Microservice</title>
+  </head>
+  <body>
+    <section id="title">
+      <h1>URL Shorten Microservice</h1>
+    </section>
+
+    <section id="user_story">
+      <h3>User Stories</h1>
+      <p>
+        <ul>
+          <li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+          <li>If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+          <li>When I visit that shortened URL, it will redirect me to my original link.</li>
+        </ul>
+      </p>
+    </section>
+
+    <section id="example">
+      <div>
+        <h3>Example: Create a shorten URL</h3>
+        <p>
+          <mark><a href="http://url-shorten-fcc.herokuapp.com/new/https://google.com">http://url-shorten-fcc.herokuapp.com/new/https://google.com</a></mark>
+        </p>
+        <p>
+          <mark><a href="http://url-shorten-fcc.herokuapp.com/new/http://www.twitter.com">http://url-shorten-fcc.herokuapp.com/new/http://www.twitter.com</a></mark>
+        </p>
+      </div>
+
+      <div>
+        <h3>Example: Usage</h3>
+        <p>
+          <mark>http://url-shorten-fcc.herokuapp.com/new/0</mark> will direct to <mark>https://google.com</mark>
+        </p>
+      </div>
+
+    </section>
+
+  </body>
+</html>

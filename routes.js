@@ -13,6 +13,10 @@ let nextNum = function() {
 
 module.exports = function(app, db) {
 
+  app.route("/").get(function(req, res) {
+    res.sendFile(__dirname + "/index.html");
+  })
+
   app.route("/new/*").get(function(req, res) {
     let url = req.originalUrl.substring(5);
     if (isValidURL(url)) {
